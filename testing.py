@@ -1,4 +1,4 @@
-import cv2 
+import cv2 as cv2
 import pytesseract
 
 #Text to speech library
@@ -15,6 +15,9 @@ import os
 #import cv2
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+#set up camera
+cam = cv2.VideoCapture(1)
 
 # Load image
 img = cv2.imread("unnamed.png")
@@ -36,7 +39,7 @@ print(myText)
 config = ('-1 eng --oem 1 --psm 3')
 
 #print example text
-myTextt = myText.split('n')
+myText = myText.split('n')
 #print(text)
 
 #myText = 'This is text to speech'

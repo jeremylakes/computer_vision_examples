@@ -45,7 +45,7 @@ result, image = vid.read()
 # show result 
 if result: 
 
-    image = cv.resize(image, (600, 450))
+    image = cv.resize(image, (600, 600))
     gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
     threshold_img = cv.threshold(gray, 0, 255, cv.THRESH_BINARY + cv.THRESH_OTSU)[1]
 
