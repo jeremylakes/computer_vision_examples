@@ -20,3 +20,4 @@ Then (for Linux) you have to include the following line in the file you call it:
 and for Windows you have to include the following line in the file you call it:
   pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
+VideoCaptureExample.py is where all these examples are being pulled together. Need to update with a new main file soon. 
