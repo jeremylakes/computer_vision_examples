@@ -5,8 +5,12 @@ import pytesseract
 # importing OpenCV library 
 import cv2 as cv
 import time
+#from batch_grammar_check import *
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+#For Windows (this hasto be here or there iwll be an import error...)
+#pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+#For Linux (this has to be here or there will be an import error...)
+pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 
 # initialize the camera 
 # If you have multiple camera connected with  
