@@ -21,3 +21,8 @@ and for Windows you have to include the following line in the file you call it:
   pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 VideoCaptureExample.py is where all these examples are being pulled together. Need to update with a new main file soon. 
+
+For Windows you need to install PyTorch or TensorFlow 2.0: https://www.tensorflow.org/install/
+which basically just says:
+pip install tensorflow
+Need to add this to PATH for Windows: C:\Users\jerem\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\Scripts

@@ -22,7 +22,6 @@ elif platform == "linux":
 # current device, assign a value in cam_port  
 # variable according to that 
 cam_port = 1
-#cam = cv.VideoCapture(cam_port) 
 
 # define a video capture object 
 vid = cv.VideoCapture(cam_port) 
