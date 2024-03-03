@@ -1,4 +1,7 @@
 # program to capture single image from webcam in python 
+#import to check which OS is running this script
+from sys import platform
+
 from gtts import gTTS
 import os
 import pytesseract
@@ -7,10 +10,12 @@ import cv2 as cv
 import time
 #from batch_grammar_check import *
 
-#For Windows (this hasto be here or there iwll be an import error...)
-#pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+if platform == "win32":
+    #For Windows (this hasto be here or there iwll be an import error...)
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+elif platform == "linux":
 #For Linux (this has to be here or there will be an import error...)
-pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
+    pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 
 # initialize the camera 
 # If you have multiple camera connected with  
